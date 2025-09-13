@@ -30,7 +30,7 @@ class Comment(Base):
     comment: Mapped[str] = mapped_column(String(280))
 
     # Adicionamos a chave estrangeira que aponta para o id da tabela 'posts'
-    post_link: Mapped[int] = mapped_column(ForeignKey("posts.link"))
+    post_id: Mapped[str] = mapped_column(ForeignKey("posts.link"))
 
     # Corrigimos o back_populates para 'comments'
     post: Mapped["Post"] = relationship(back_populates="comments")

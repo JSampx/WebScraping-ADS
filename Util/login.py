@@ -14,6 +14,8 @@ import time
 def login_in_x():
     # Chrome options5
     chrome_options = Options()
+    #chrome_options.debugger_address = "127.0.0.1:9222"
+
     if os.name == "posix": # verifica se o Sistema Operacional é Linux
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
@@ -65,6 +67,6 @@ def login_in_x():
     submit_btn.click()
 
 
-    time.sleep(5)  # só para ver o resultado antes de fechar
+    time.sleep(1)  # só para ver o resultado antes de fechar
 
     return driver

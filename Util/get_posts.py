@@ -21,12 +21,14 @@ time.sleep(5)
 twt_dict = {}
 # Loop para capturar 30 tweets
 while len(twt_dict) < 30:
-    # Rola a página
-    driver.execute_script(f"window.scrollBy(0, {SCROLL_STEP});")
-    time.sleep(1)
     tweet_xpath = "//article[@data-testid='tweet']"
     tweet_xpath_text = ".//div[@data-testid='tweetText']"
     tweet_xpath_href = ".//a[contains(@href, '/status/')]"
+
+    # Rola a página
+    driver.execute_script(f"window.scrollBy(0, {SCROLL_STEP});")
+    time.sleep(1)
+
     # Captura tweets visíveis
     elements = (driver.find_elements(By.XPATH, tweet_xpath))
 
