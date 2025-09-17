@@ -16,6 +16,6 @@ def export_to_csv():
     df = pd.read_sql(text(query), engine)
 
     # exporta para CSV
-    df.to_csv(f"xposts-{URI_PATH}.csv", index=False, encoding="utf-8")
+    df.to_csv(f"xposts-{URI_PATH}.csv", index=False, encoding="utf-8", sep="|")
 
 export_to_csv()
