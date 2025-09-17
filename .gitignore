@@ -204,3 +204,4 @@ __marimo__/
 
 .venv/
 /Models/xposts-g1.db
+/Models/xposts-g1.csv
