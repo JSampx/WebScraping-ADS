@@ -17,4 +17,5 @@ for postagem, row in contagem_sentimentos.iterrows():
     plt.ylabel('Número de comentários')
     plt.xlabel('Sentimento')
     plt.tight_layout()
+    plt.savefig(f"../Data-Analysis/exported_charts/{postagem[:20]}.png")
     plt.show()
