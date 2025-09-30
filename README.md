@@ -15,8 +15,9 @@ Requisitos:
 3. Limpar os dados coletados
 4. Analisar o sentimento dos comentários das postagens como: POSITIVO, NEGATIVO e NEUTRO
 5. Gerar um gráfico em barras para análise do tomador de decisões
-Oi
 
+
+[Repositório desse projeto](https://github.com/JSampx/WebScraping-ADS)
 
 
 ### Equipe dev

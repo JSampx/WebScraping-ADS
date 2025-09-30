@@ -11,6 +11,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 
+# função de acesso ao x
 def login_in_x():
     # Chrome options5
     chrome_options = Options()
@@ -20,6 +21,7 @@ def login_in_x():
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
         chrome_options.add_argument("--disable-gpu")
+        chrome_options.add_argument("--disable-software-rasterizer")
         chrome_options.add_argument("--remote-debugging-port=9222")
         # chrome_options.add_argument("--headless=new")  # use se não quiser abrir janela
 

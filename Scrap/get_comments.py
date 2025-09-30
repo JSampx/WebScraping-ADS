@@ -41,7 +41,7 @@ def show_possible_spam():
         pass
 
 try:
-    # Conectar no Banco de dados e pegar o primeiro link
+    # Conectar no Banco de dados e pegar os links
     posts_list = session.query(Post).all()
     # posts_list = session.query(Post).limit(6).all()
 

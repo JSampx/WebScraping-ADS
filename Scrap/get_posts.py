@@ -58,6 +58,7 @@ print(f"\nTotal de tweets coletados: {len(twt_dict)}")
 
 session = Session()
 
+# persistencia em BD
 if PERSIST_TWT:
     for key, value in twt_dict.items():
         try:
